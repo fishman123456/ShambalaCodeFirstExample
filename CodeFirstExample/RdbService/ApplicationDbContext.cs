@@ -11,7 +11,7 @@ namespace CodeFirstExample.RdbService
     internal class ApplicationDbContext : DbContext
     {
         public DbSet<MenuItem> MenuItems { get; set; }  // отображение таблицы MenuItem
-
+        public DbSet<Ingredient> ingredients { get; set; } // отображение таблицы Ingridient
         // конфигурация подключения к БД
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

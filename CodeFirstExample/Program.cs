@@ -52,3 +52,38 @@ void TestMenuItem(IMenuItemSerivce service)
 
 // вызов
 TestMenuItem(new RdbItemService());
+// процедура тестирования сервиса Ingredient
+void TestIngredient(IIngredientService ingredientService, IMenuItemSerivce menuItemSerivce)
+{
+    // 1. получение всех MenuItem
+    List<MenuItem> menuItems = menuItemSerivce.GetMenu();
+    foreach (MenuItem menuItem in menuItems)
+    {
+        // 2. для каждого из нихз получить все ингредиенты
+        List<Ingredient> ingredients = ingredientService.GetAll(menuItem.Id);
+        if (ingredients.Count == 0)
+        {
+            // 3. если ингредиенты отсутствуют, то добавить их (по 2)
+            ingredientService.Add(new Ingredient()
+            {
+                Description = $"ingredient#1 {menuItem.Title}",
+                Weight = 100,
+                MenuItemId = menuItem.Id
+            });
+            ingredientService.Add(new Ingredient()
+            {
+                Description = $"ingredient#2 {menuItem.Title}",
+                Weight = 100,
+                MenuItemId = menuItem.Id
+            });
+            // и снова вытянуть из БД
+            ingredients = ingredientService.GetAll(menuItem.Id);
+        }
+        // 3. получить по id 
+        foreach (Ingredient ing in ingredients)
+        {
+            Ingredient? ingredient = ingredientService.GetIngredientById(ing.Id);
+            Console.WriteLine($"{ingredient} of {ingredient?.MenuItem}");
+        }
+    }
+}

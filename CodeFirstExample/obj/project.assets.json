@@ -2889,11 +2889,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fishman_1\\Documents\\GitHub\\CodeFirstExample\\CodeFirstExample\\CodeFirstExample.csproj",
+      "projectUniqueName": "C:\\Users\\Fishman_1\\Documents\\GitHub\\ShambalaCodeFirstExample\\CodeFirstExample\\CodeFirstExample.csproj",
       "projectName": "CodeFirstExample",
-      "projectPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\CodeFirstExample\\CodeFirstExample\\CodeFirstExample.csproj",
+      "projectPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\ShambalaCodeFirstExample\\CodeFirstExample\\CodeFirstExample.csproj",
       "packagesPath": "C:\\Users\\Fishman_1\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\CodeFirstExample\\CodeFirstExample\\obj\\",
+      "outputPath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\ShambalaCodeFirstExample\\CodeFirstExample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Fishman_1\\AppData\\Roaming\\NuGet\\NuGet.Config",

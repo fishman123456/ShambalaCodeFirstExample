@@ -21,10 +21,12 @@ namespace CodeFirstExample.Entity
         public int Fats { get; set; }           // жиры
         public int Carbohydrates { get; set; } // углеводы
         public int Weight { get; set; }         // вес в граммах
-
+        //реализация через агрегацию - посредством навигационных свойств
+        public List<Ingredient>? ingredients { get; set; }
         public MenuItem()
         {
             Title = "";
+            ingredients = null;
         }
 
         public override string ToString()

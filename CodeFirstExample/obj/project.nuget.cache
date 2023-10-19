@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FilvxSW4wsXIZVeHY+OukZO0hNR1ZAVGBZlL3GLgiZzKOtWOb0Ziqp5ttwgSINPk0OS2es8eQoepk+z7rW/CMQ==",
+  "dgSpecHash": "auXrhAApTdtR7OTsko1vnDfKZq9o1o5dsGXL/RGlHpB+CdsQU1tLqpe+ucstNjUqBggAko4wjDAOSpRpQypdJw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\CodeFirstExample\\CodeFirstExample\\CodeFirstExample.csproj",
+  "projectFilePath": "C:\\Users\\Fishman_1\\Documents\\GitHub\\ShambalaCodeFirstExample\\CodeFirstExample\\CodeFirstExample.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Fishman_1\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Fishman_1\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
